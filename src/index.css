@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+    url('./fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+}
+
