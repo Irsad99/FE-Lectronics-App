@@ -140,7 +140,7 @@ function Cards() {
                     </Card.Body>
                     <div style={{ padding: '27px', margin: '-140px 0px' }}>
                         <Card.Img variant="top" src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1" />
-                        <Card.Body style={{ display: 'flex' }}>
+                        <Card.Body style={{ display: 'flex', padding: '2rem 0' }}>
                             <Button className={style.but_detail} style={{ width: '100%' }}>
                                 Detail
                             </Button>

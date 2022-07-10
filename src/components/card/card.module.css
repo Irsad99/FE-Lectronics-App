@@ -6,13 +6,13 @@
     border-radius: 20px;
     display: block;
     border: 0;
-    padding-bottom: 11%;
+    padding-bottom: 9.7%;
     margin: 25px 0;
 }
 
 .body_ut {
     background: #9bc0c91a;
-    padding-bottom: 120px;
+    padding: 27px 27px 120px 27px;
 }
 
 .but_detail {
@@ -30,6 +30,10 @@
 
 .but_cart:hover {
     background: #ffffff;
+}
+
+.card-body {
+    padding: 0;
 }
 
 .card_name {
