@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './navbar.module.css'
-import { Navbar, Container, Button, InputGroup, FormControl } from 'react-bootstrap'
-import Logo from './Logo2.png'
+import { Dropdown, Navbar, Container, Button, InputGroup, FormControl } from 'react-bootstrap'
+// import '../../index.css'
 
 function Header() {
     return (
@@ -16,9 +16,21 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Button className={style.but_user}>
-                            <img src="https://i.ibb.co/C7HFPXt/Vector.png" alt="" />
-                        </Button>
+                        <Dropdown>
+                            <Dropdown.Toggle className={style.but_user} variant="success" id="dropdown-basic">
+                                <img src="https://i.ibb.co/C7HFPXt/Vector.png" alt="" />
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <div className={style.avatar}>
+                                    <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" alt="" width="45px" />
+                                </div>
+                                <Dropdown.Item href="#/action-1">Cart</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">History</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Profile</Dropdown.Item>
+                                <Dropdown.Item href="#/action-4">Logout</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

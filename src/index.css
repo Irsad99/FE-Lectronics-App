@@ -33,6 +33,14 @@ code {
     margin: 0 !important;
 }
 
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    min-width: 0 !important;
+}
+
 @font-face {
     font-family: 'Nunito';
     src: local('Nunito'), url('./fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
