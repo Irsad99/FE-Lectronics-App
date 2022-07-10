@@ -73,20 +73,13 @@
     margin-bottom: -18px !important;
     box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
     border-radius: 20px;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     border: 0;
     position: relative;
     z-index: 2;
     background: #fff;
     padding: 12px;
-}
-
-.foot {
-    background: #0020b2;
-    height: 286px;
-    width: 100%;
-    opacity: 0.05;
 }
 
 .label_cat {
@@ -105,4 +98,54 @@
     box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
     border-radius: 10px;
     color: #fff;
+}
+
+.but_user {
+    background: #0300ad;
+    border-radius: 15px;
+    border: 0;
+    padding: 15px 20px;
+}
+
+.but_back {
+    background: rgba(3, 0, 173, 0.1);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    border: 0;
+    padding: 15px 20px;
+}
+
+.but_back:hover {
+    background: rgba(3, 0, 173, 0.1);
+}
+
+.input_search {
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.btn_search {
+    background: #0300ad;
+    border-radius: 0px 20px 20px 0px !important;
+    padding: 30px;
+    border: 0;
+}
+
+.btn_w {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn_w:hover {
+    background: #ffffff;
+}
+
+.avatar {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
 }
