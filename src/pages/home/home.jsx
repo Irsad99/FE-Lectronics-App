@@ -18,8 +18,8 @@ function Home() {
                 <div className={style.text2}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit..</div>
                 <br />
                 <div className={style.button}>
-                <button type="button" className="btn btn-info me-md-2">Shop Now</button>
-                <button type="button" className="btn btn-outline-info">Be a Seller</button>
+                <a href="login" className="btn btn-info me-md-2" tabIndex={-1} role="button">Shop Now</a>
+                <a href="#" className="btn btn-outline-info" tabIndex={-1} role="button">Be a Seller</a>
                 </div>  
             </div>
             <div className="col">
