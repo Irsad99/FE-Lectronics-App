@@ -7,7 +7,7 @@ function Header() {
     return (
         <>
             <div className={style.navbar} />
-            <Navbar className="pt-5" style={{ margin: '0 0 5.8%' }}>
+            <Navbar className="pt-5" style={{ margin: '0 0 4.8%' }}>
                 <Container>
                     <Navbar.Brand href="#home">
                         <Button className={style.but_back}>
@@ -34,8 +34,6 @@ function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-
 
             {/* <Navbar.Brand href="#home">
                 <img width="auto" height="50px" className={style.logo} src={Logo}  alt="logo" />
