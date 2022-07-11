@@ -16,7 +16,7 @@ function Header() {
             <Nav.Link href="#features">Products</Nav.Link>
             <Nav.Link href="#pricing">Community</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>
-            <Button href="login" className={style.button} variant="primary">Sign Up</Button>
+            <Button href="register" className={style.button} variant="primary">Sign Up</Button>
             </Nav>
             </Container>
         </Navbar>
