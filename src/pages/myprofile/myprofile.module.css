@@ -82,3 +82,7 @@
 .col {
     margin-top: 3%;
 }
+
+.label {
+    font: 700 22px 'Nunito';
+}
