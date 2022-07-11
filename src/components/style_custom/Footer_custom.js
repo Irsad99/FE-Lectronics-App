@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Foot = styled.div`
   height: auto;
-  background-color: #f9f9fb;
+  background-color: #6d99a51a;
 `;
 
 export const Content = styled.div`
