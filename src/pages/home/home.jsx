@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../components/header/navbar'
+import Navbar from '../../components/headerAuth/navbar'
 import Navcard from '../../components/navcard/navcard'
 import style from './home.module.css'
 import background from './bg1.jpg'

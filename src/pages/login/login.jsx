@@ -35,8 +35,11 @@ function Login() {
             data: Users,
         })
             .then((res) => {
-                const { data } = res.data
-                dispatch(login(data))
+                const { data } = res
+                if (!data.isError) {
+                    dispatch(login(data.data))
+                }
+                console.log(data)
             })
             .catch((err) => {
                 console.log(err)
