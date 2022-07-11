@@ -1,0 +1,167 @@
+.card {
+    width: 366px;
+    color: #000;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    display: block;
+    border: 0;
+    padding-bottom: 11%;
+    margin: 25px 0;
+}
+
+.body_ut {
+    background: #9bc0c91a;
+    padding-bottom: 120px;
+    display: flex;
+}
+
+.but_detail {
+    background: #0300ad;
+    border-radius: 10px;
+}
+
+.but_cart {
+    border: 1px solid #0020b2;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 14px;
+}
+
+.but_cart:hover {
+    background: #ffffff;
+}
+
+.card_name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    text-decoration: none;
+}
+
+.card_price {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #0300ad;
+}
+
+.card_rate {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #0300ad;
+    margin: 4px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination {
+    justify-content: center;
+    margin-bottom: -18px !important;
+    box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 12px;
+}
+
+.label_cat {
+    text-decoration: none;
+    padding: 15px 35px;
+    color: #777777;
+    font-family: 'Nunito';
+}
+
+.btn_gr {
+    margin: 60px 0;
+}
+
+#active {
+    background: #0300ad;
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.but_user {
+    background: #0300ad;
+    border-radius: 15px;
+    border: 0;
+    padding: 15px 20px;
+}
+
+.but_back {
+    background: rgba(3, 0, 173, 0.1);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    border: 0;
+    padding: 15px 20px;
+}
+
+.but_back:hover {
+    background: rgba(3, 0, 173, 0.1);
+}
+
+.input_search {
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.btn_search {
+    background: #0300ad;
+    border-radius: 0px 20px 20px 0px !important;
+    padding: 30px;
+    border: 0;
+}
+
+.btn_w {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn_w:hover {
+    background: #ffffff;
+}
+
+.avatar {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.img {
+    width: 22px;
+    height: 22px;
+}
+
+.imgParent {
+    border-radius: 100%;
+    background: blue;
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+    padding: 12px 12px 12px 12px;
+}   
