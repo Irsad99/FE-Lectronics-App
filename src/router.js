@@ -6,6 +6,8 @@ import {
   } from 'react-router-dom'
 import Home from './pages/home/home'
 import Login from './pages/login/login'
+import Products from './pages/products/products'
+
 
 function router() {
     return (
@@ -13,6 +15,7 @@ function router() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="login" element={<Login />} />
+                <Route path="/products" element={<Products />} />
             </Routes>
         </BrowserRouter>
     )
