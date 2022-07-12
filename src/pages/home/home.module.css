@@ -1,7 +1,9 @@
 .background {
     height: 100vh;
     width: 100%;
-    background: #f2f4fb;
+    /* background: #0020B2; */
+    background: #6d99a51a;
+    /* opacity: 0.05; */
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -54,7 +56,197 @@
     color: #333333;
 }
 
-.button {
+.buttonParent {
     min-width: 50%;
     margin: auto;
+}
+
+.button2 {
+    width: 150px;
+    height: 40px;
+
+    align-items: center;
+    margin-left: 570px;
+    margin-bottom: 90px;
+
+    font-size: 16px;
+    font-weight: 700;
+    background: #0300AD;
+
+    /* shadow/landing page */
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 10px;
+}
+
+.btnemail {
+    width: 150px;
+    height: 40px;
+
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    background: #0300AD;
+
+    /* shadow/landing page */
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 10px;
+}
+
+.cardChild {
+    border-radius: 10px;
+    color: blue;
+    padding-top: 5px;
+    margin-top: 100px;
+    margin-left: 495px;
+    margin-bottom: 50px;
+}
+
+.title3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.parent {
+    text-align: center;
+}
+
+.card {
+    width: 386px;
+    height: 431px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 18px;
+    background: #0020B2;
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.card2 {
+    width: 386px;
+    height: 431px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 18px;
+    background: white;
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.cardBody {
+    width: 350px;
+    height: 231px;
+    padding: 10px 20px 10px 10px;
+}
+
+.cardParent {
+    display: flex;
+    margin-top: 60px;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.imgParent {
+    border-radius: 100%;
+    background: #dddcdc;
+    width: 100px;
+    height: 100px;
+    padding: 25px 25px 25px 25px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #dddcdc;
+    margin-top: 30px;
+}
+
+.title2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.isi {
+    margin-top: 30px;
+    color: #dddcdc;
+    font-weight: 600;
+}
+
+.isi2 {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.promo {
+    margin: auto;
+    background: #6d99a51a;
+    border-radius: 20px;
+    width: 1200px;
+    height: 480px;
+    margin-top: -480px;
+}
+
+.img2 {
+    width: 528px;
+    height: 544px;
+    margin-left: 50px;
+}
+
+.textpromo {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 140%;
+    margin-left: 600px;
+
+    /* or 84px */
+    letter-spacing: 0.03em;
+
+    color: #333333;
+}
+
+.textemail {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 160%;
+    margin-left: 600px;
+    margin-top: 10px;
+}
+
+.email_sub {
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 20px;
+
+    width: 486px;
+    height: 79px;
+
+    border: 1px solid #0300AD;
+    border-radius: 10px;
+    margin-left: 600px;
+}
+
+.form {
+    border: none;
+    width: 300px;
+    height: 40px;
+    background: #6d99a51a;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.form::placeholder {
+    color: blue;
+    font-family: 'Nunito';
 }

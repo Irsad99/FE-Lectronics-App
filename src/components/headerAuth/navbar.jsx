@@ -1,8 +1,16 @@
 import React from 'react'
 import style from './navbar.module.css'
-import { Navbar, Container, Button } from 'react-bootstrap'
+import { Dropdown, Navbar, Container, Button } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+    const navigate = useNavigate()
+
+    const logout = () => {
+        localStorage.clear()
+        navigate('/login')
+    }
+
     return (
         <>
             <div className={style.navbar} />
@@ -15,25 +23,24 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Button className={style.but_user}>
-                            <img src="https://i.ibb.co/C7HFPXt/Vector.png" alt="" />
-                        </Button>
+                        <Dropdown>
+                            <Dropdown.Toggle className={style.but_user} variant="success" id="dropdown-basic">
+                                <img src="https://i.ibb.co/C7HFPXt/Vector.png" alt="" />
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <div className={style.avatar}>
+                                    <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" alt="" width="45px" />
+                                </div>
+                                <Dropdown.Item href="#/action-1">Cart</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">History</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Profile</Dropdown.Item>
+                                <Dropdown.Item onClick={logout}>Logout</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-            {/* <Navbar.Brand href="#home">
-                <img width="auto" height="50px" className={style.logo} src={Logo}  alt="logo" />
-            </Navbar.Brand>
-            <Nav className={style.nav}>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Products</Nav.Link>
-            <Nav.Link href="#pricing">Community</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <Button className={style.button} variant="primary">Sign Up</Button>
-            </Nav>
-            </Container> */}
-            {/* </Navbar> */}
         </>
     )
 }

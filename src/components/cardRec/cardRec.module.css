@@ -69,6 +69,38 @@
     justify-content: space-between;
 }
 
+.pagination {
+    justify-content: center;
+    margin-bottom: -18px !important;
+    box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 12px;
+}
+
+.label_cat {
+    text-decoration: none;
+    padding: 15px 35px;
+    color: #777777;
+    font-family: 'Nunito';
+}
+
+.btn_gr {
+    margin: 60px 0;
+}
+
+#active {
+    background: #0300ad;
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 10px;
+    color: #fff;
+}
+
 .but_user {
     background: #0300ad;
     border-radius: 15px;
@@ -86,6 +118,32 @@
 
 .but_back:hover {
     background: rgba(3, 0, 173, 0.1);
+}
+
+.input_search {
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.btn_search {
+    background: #0300ad;
+    border-radius: 0px 20px 20px 0px !important;
+    padding: 30px;
+    border: 0;
+}
+
+.btn_w {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn_w:hover {
+    background: #ffffff;
 }
 
 .avatar {
