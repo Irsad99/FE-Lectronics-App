@@ -8,7 +8,7 @@ function Products() {
     return (
         <>
             <Header />
-            <Container>
+            <Container style={{ maxWidth: '64%' }}>
                 <Cards />
             </Container>
             <Footer />
