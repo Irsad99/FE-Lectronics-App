@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, {useEffect, useState} from 'react'
 import { Container } from 'react-bootstrap'
+// import { Container } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import withAuth from '../../helpers/withAuth'
 
 import style from './products.module.css'

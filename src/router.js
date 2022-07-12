@@ -9,6 +9,7 @@ import Cart from './pages/cart/cart'
 import Notife from './pages/notife/notife'
 import Checkout from './pages/checkout/checkout'
 import History from './pages/history/history'
+import Detail from './pages/detail/detail'
 import Manage from './pages/manage/manage'
 
 function router() {
@@ -24,6 +25,7 @@ function router() {
                 <Route path="/notif" element={<Notife />} />
                 <Route path="/me" element={<MyProfile />} />
                 <Route path="/history" element={<History />} />
+                <Route path="detail" element={<Detail />} />
                 <Route path="/manage" element={<Manage />} />
             </Routes>
         </BrowserRouter>

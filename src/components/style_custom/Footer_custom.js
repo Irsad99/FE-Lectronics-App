@@ -10,7 +10,7 @@ export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 100px;
-  font-family: Mulish;
+  font-family: Nunito;
   font-size: 18px;
   color: #848484;
 

@@ -1,10 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Card, Button } from 'react-bootstrap'
 import style from './card.module.css'
 import '../../index.css'
+import {Link, useNavigate} from 'react-router-dom'
 
 function Cards(props) {
+    const navigasi = useNavigate()
+
+    const goto = () => {
+        navigasi('/detail')
+    }
     return (
         <>
             <Card className={style.card}>
