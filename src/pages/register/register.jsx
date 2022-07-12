@@ -10,7 +10,7 @@ function Register() {
     const [Users, setUsers] = useState({ email: 'email', password: 'password' })
     const { isAuth } = useSelector((state) => state.users)
 
-    const api = useApi('http://localhost:8080')
+    const api = useApi()
     const navigate = useNavigate()
 
     useEffect(() => {
