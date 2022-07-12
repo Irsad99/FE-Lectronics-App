@@ -3,7 +3,10 @@
     box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
     border-radius: 20px;
     padding: 30px;
+<<<<<<< HEAD
+=======
     border: none;
+>>>>>>> master
 }
 
 .btn_search {
@@ -21,6 +24,40 @@
     border: 0;
 }
 
+<<<<<<< HEAD
+.btn_gr {
+    margin: 60px 0;
+}
+
+.label_cat {
+    text-decoration: none;
+    padding: 15px 35px;
+    color: #777777;
+    font-family: 'Nunito';
+}
+
+#active {
+    background: #0300ad;
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.pagination {
+    justify-content: center;
+    margin-bottom: -18px !important;
+    box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 12px;
+}
+=======
 .btn_w:hover {
     background: #ffffff;
 }
+>>>>>>> master
