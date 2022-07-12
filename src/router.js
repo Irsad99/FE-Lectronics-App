@@ -5,6 +5,7 @@ import Login from './pages/login/login'
 import MyProfile from './pages/myprofile/myprofile'
 import Products from './pages/products/products'
 import Register from './pages/register/register'
+import History from './pages/history/history'
 
 function router() {
     return (
@@ -15,6 +16,7 @@ function router() {
                 <Route path="/register" element={<Register />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/me" element={<MyProfile />} />
+                <Route path="/history" element={<History />} />
             </Routes>
         </BrowserRouter>
     )

@@ -24,3 +24,24 @@
 .btn_w:hover {
     background: #ffffff;
 }
+
+.title,
+.title:hover {
+    text-decoration: none;
+    font: 1000 60px Nunito;
+    color: #333333;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.date,
+.date:hover {
+    color: #777777;
+    font: 500 18px 'Nunito';
+    text-decoration: none;
+    line-height: 25px;
+}

@@ -1,0 +1,97 @@
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.left {
+    display: flex;
+}
+
+.img {
+    background: #f5f9fa;
+    padding: 20px;
+}
+
+.details {
+    margin-left: 22px;
+}
+
+.category,
+.category:hover {
+    background: #0300ad;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    font: 500 12px 'Nunito';
+    text-decoration: none;
+}
+
+.name {
+    margin-top: 46px;
+    font: Bold 22px 'Nunito';
+    margin-bottom: 10px;
+}
+
+.quantity {
+    color: #777777;
+    text-decoration: none;
+    padding-right: 20px;
+    border-right: 1px solid;
+}
+
+.price {
+    color: #777777;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.right {
+}
+
+.opx {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.label_price,
+.label_price:hover {
+    text-decoration: none;
+    color: #777777;
+    margin-right: 20px;
+}
+
+.total_price,
+.total_price:hover {
+    text-decoration: none;
+    color: #333333;
+    font: Bold 40px 'Nunito';
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.but_details,
+.but_details:hover {
+    background: #fff;
+    border: 1px solid;
+    color: #0300ad;
+    padding: 10px 45px;
+    margin-right: 20px;
+}
+
+.but_reviews,
+.but_reviews:hover {
+    background: #0300ad;
+    border: 1px solid #0300ad;
+    color: #fff;
+    padding: 10px 45px;
+}
