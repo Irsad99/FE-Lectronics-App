@@ -1,0 +1,40 @@
+.form {
+    margin-top: 150px;
+    margin-left: 15px;
+}
+
+.text1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+
+    /* identical to box height, or 56px */
+    letter-spacing: 0.02em;
+
+    color: #333333;
+}
+
+.text2 {
+    /* Text/Description */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* identical to box height, or 29px */
+    letter-spacing: 0.03em;
+
+    /* Section */
+    color: #777777;
+
+    opacity: 0.9;
+    margin-top: 15px;
+}
+
+.background {
+    position: absolute;
+    background-color: #415fe7;
+}
