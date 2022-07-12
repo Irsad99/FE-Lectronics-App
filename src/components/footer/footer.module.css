@@ -1,4 +1,11 @@
 .foot {
+<<<<<<< HEAD
+    background: #0020b2;
+    height: 286px;
+    width: 100%;
+    opacity: 0.05;
+}
+=======
     background:#6d99a51a;
     height: 100%;
     width: 100%;
@@ -68,3 +75,4 @@ li {
     color: #848484;
     font-size: 17px;
 }
+>>>>>>> master
