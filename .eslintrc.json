@@ -19,6 +19,7 @@
     ],
     "rules": {
         "no-unused-vars": "warn",
-        "quotes": ["warn", "single"]
+        "quotes": ["warn", "single"],
+        "react/prop-types": "off"
     }
 }
