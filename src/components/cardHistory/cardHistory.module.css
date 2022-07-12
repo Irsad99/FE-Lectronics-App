@@ -95,3 +95,18 @@
     color: #fff;
     padding: 10px 45px;
 }
+
+.pagination {
+    justify-content: center;
+    margin-bottom: -18px !important;
+    box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 12px;
+    margin-top: 10%;
+}

@@ -3,6 +3,7 @@ import { Container, Button, InputGroup, FormControl } from 'react-bootstrap'
 import Header from '../../components/headerAuth/navbar'
 import style from './history.module.css'
 import CardHistory from '../../components/cardHistory/cardHistory'
+import Footer from '../../components/footer/footer'
 
 function History() {
     return (
@@ -30,6 +31,7 @@ function History() {
                     </div>
                 </Container>
             </div>
+            <Footer />
         </>
     )
 }
