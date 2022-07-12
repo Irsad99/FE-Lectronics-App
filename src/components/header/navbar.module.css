@@ -4,7 +4,7 @@
     height: 100%;
     padding: 20px 0;
     background: transparent;
-    background: #f2f4fb;
+    /* background: #0020B2; */
     margin-left: 0px;
     margin-top: 0px;
     font-family: 'Nunito';
@@ -19,12 +19,18 @@
     font-size: 18px;
     font-weight: 600;
     color: #333333;
+}
 
+.navbar {
+    height: 286px;
+    background: #0020b2;
+    position: absolute;
+    opacity: 0.05;
 }
 
 .button {
     min-width: 131px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -33,7 +39,7 @@
 
     font-size: 16px;
     font-weight: 700;
-    background: #0300AD;
+    background: #0300ad;
 
     /* shadow/landing page */
     box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
@@ -44,4 +50,54 @@
     margin-top: 35px;
     margin-bottom: 35px;
     margin-left: auto;
+}
+
+.but_user {
+    background: #0300ad;
+    border-radius: 15px;
+    border: 0;
+    padding: 15px 20px;
+}
+
+.but_back {
+    background: rgba(3, 0, 173, 0.1);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    border: 0;
+    padding: 15px 20px;
+}
+
+.but_back:hover {
+    background: rgba(3, 0, 173, 0.1);
+}
+
+.input_search {
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.btn_search {
+    background: #0300ad;
+    border-radius: 0px 20px 20px 0px !important;
+    padding: 30px;
+    border: 0;
+}
+
+.btn_w {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(45, 45, 45, 0.1);
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn_w:hover {
+    background: #ffffff;
+}
+
+.avatar {
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
 }

@@ -13,6 +13,7 @@
 .body_ut {
     background: #9bc0c91a;
     padding-bottom: 120px;
+    display: flex;
 }
 
 .but_detail {
@@ -150,3 +151,17 @@
     padding: 10px 20px;
     border-bottom: 1px solid #dbdbdb;
 }
+
+.img {
+    width: 22px;
+    height: 22px;
+}
+
+.imgParent {
+    border-radius: 100%;
+    background: blue;
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+    padding: 12px 12px 12px 12px;
+}   
