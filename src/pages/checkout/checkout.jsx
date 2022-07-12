@@ -1,4 +1,6 @@
 import React from 'react';
+import withAuth from '../../helpers/withAuth'
+
 import { Button, Card, Form } from 'react-bootstrap';
 import style from './checkout.module.css';
 import Header from '../../components/header/navbar';
@@ -77,4 +79,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default withAuth(Cart);

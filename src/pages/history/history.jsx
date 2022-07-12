@@ -1,4 +1,6 @@
 import React from 'react'
+import withAuth from '../../helpers/withAuth'
+
 import { Container, Button, InputGroup, FormControl } from 'react-bootstrap'
 import Header from '../../components/headerAuth/navbar'
 import style from './history.module.css'
@@ -36,4 +38,4 @@ function History() {
     )
 }
 
-export default History
+export default withAuth(History)
