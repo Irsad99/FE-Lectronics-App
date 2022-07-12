@@ -1,11 +1,11 @@
-import React from "react";
-import { InputGroup, FormControl, Button, Card } from "react-bootstrap";
-import style from "./cart.module.css";
-import logo from "./logo.png";
-import person from "./person.png";
-import Header from "../../components/header/navbar";
-import CardCart from "../../components/cardCart/cardCart";
-import FormCheckInput from "react-bootstrap/esm/FormCheckInput";
+import React from 'react';
+import { InputGroup, FormControl, Button, Card } from 'react-bootstrap';
+import style from './cart.module.css';
+import logo from './logo.png';
+import person from './person.png';
+import Header from '../../components/header/navbar';
+import CardCart from '../../components/cardCart/cardCart';
+import FormCheckInput from 'react-bootstrap/esm/FormCheckInput';
 
 function Cart() {
   return (
@@ -62,7 +62,7 @@ function Cart() {
                 <Card.Text className={style.title_bill}> Bill</Card.Text>
                 <Card.Text className={style.cost_bill}> $6000</Card.Text>
               </div>
-              <Button className={style.but_checkout} style={{ width: "97%" }}>
+              <Button className={style.but_checkout} style={{ width: '97%' }}>
                 Check Out
               </Button>
             </Card.Body>

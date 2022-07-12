@@ -1,9 +1,9 @@
-import React from "react";
-import { Button, Card, Container } from "react-bootstrap";
-import style from "./notife.module.css";
-import logo from "./logo.png";
-import Header from "../../components/header/navbar";
-import Cards from "../../components/cardRec/cardRec";
+import React from 'react';
+import { Button, Card, Container } from 'react-bootstrap';
+import style from './notife.module.css';
+import logo from './logo.png';
+import Header from '../../components/header/navbar';
+import Cards from '../../components/cardRec/cardRec';
 
 function Cart() {
   return (
@@ -18,7 +18,7 @@ function Cart() {
               <div className={style.text2}>
                 Transaction was successful, do you want to shop again?
               </div>
-              <Button className={style.but_checkout} style={{ width: "18%" }}>
+              <Button className={style.but_checkout} style={{ width: '18%' }}>
                 Shop Again
               </Button>
             </div>

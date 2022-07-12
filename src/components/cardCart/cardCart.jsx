@@ -1,10 +1,10 @@
-import React from "react";
-import style from "./cardCart.module.css";
-import logo from "./trash.png";
-import min from "./min.png";
-import plus from "./plus.png";
-import { Card } from "react-bootstrap";
-import FormCheckInput from "react-bootstrap/esm/FormCheckInput";
+import React from 'react';
+import style from './cardCart.module.css';
+import logo from './trash.png';
+import min from './min.png';
+import plus from './plus.png';
+import { Card } from 'react-bootstrap';
+import FormCheckInput from 'react-bootstrap/esm/FormCheckInput';
 
 function Cards() {
   return (
@@ -19,8 +19,8 @@ function Cards() {
           <div className={style.title}>
             <Card.Title className={style.title2}>Iphone Terbaru</Card.Title>
             <Card
-              bg={"primary"}
-              style={{ width: "8rem", height: "2rem" }}
+              bg={'primary'}
+              style={{ width: '8rem', height: '2rem' }}
               className={style.cardChild}
             >
               <Card.Title className={style.title3}>Air Conditioner</Card.Title>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, InputGroup, FormControl, Pagination, Card, Button } from 'react-bootstrap'
+import { InputGroup, FormControl, Pagination, Card, Button } from 'react-bootstrap'
 import style from './card.module.css'
 import '../../index.css'
 

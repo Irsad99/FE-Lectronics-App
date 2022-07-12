@@ -1,6 +1,6 @@
-import React from "react";
-import logo from "./Logo1.png";
-import { Foot, Content } from "../style_custom/Footer_custom";
+import React from 'react';
+import logo from './Logo1.png';
+import { Foot, Content } from '../style_custom/Footer_custom';
 
 function Footer() {
   return (
@@ -16,24 +16,24 @@ function Footer() {
               className="d-inline-block align-top"
             />
             <p>
-              {" "}
+              {' '}
               <br />
               91 Spring Dr. 
               Hudsonville, MI 49426
             </p>
-            <hr/>{" "}
+            <hr/>{' '}
             <br />
             <p>2022 My Lectronic. All rights reserved</p>
           </div>
           <ul>
-            {" "}
+            {' '}
             How it Works
             <li>Select Product</li>
             <li>Make Payment</li>
             <li>Receive Product</li>
           </ul>
           <ul>
-            {" "}
+            {' '}
             Product
             <li>Headphone</li>
             <li>Air Conditioner</li>
@@ -41,7 +41,7 @@ function Footer() {
             <li>Television</li>
           </ul>
           <ul>
-            {" "}
+            {' '}
             Help
             <li>About</li>
             <li>Contact Us</li>

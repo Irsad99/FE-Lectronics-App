@@ -1,7 +1,7 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import style from "./cardland.module.css";
-import "../../index.css";
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import style from './cardland.module.css';
+import '../../index.css';
 
 function Cards() {
   return (
@@ -9,11 +9,11 @@ function Cards() {
       <div
         className={style.cardCont}
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "8%",
-          flexDirection: "row",
-          flexWrap: "wrap",
+          display: 'flex',
+          justifyContent: 'space-between',
+          marginBottom: '8%',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
         }}
       >
         <Card className={style.card}>
@@ -38,7 +38,7 @@ function Cards() {
               />
             </div>
           </Card.Body>
-          <div style={{ padding: "27px", margin: "-140px 0px" }}>
+          <div style={{ padding: '27px', margin: '-140px 0px' }}>
             <Card.Img
               variant="top"
               src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1"
@@ -67,7 +67,7 @@ function Cards() {
               />
             </div>
           </Card.Body>
-          <div style={{ padding: "27px", margin: "-140px 0px" }}>
+          <div style={{ padding: '27px', margin: '-140px 0px' }}>
             <Card.Img
               variant="top"
               src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1"
@@ -96,7 +96,7 @@ function Cards() {
               />
             </div>
           </Card.Body>
-          <div style={{ padding: "27px", margin: "-140px 0px" }}>
+          <div style={{ padding: '27px', margin: '-140px 0px' }}>
             <Card.Img
               variant="top"
               src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1"
@@ -125,7 +125,7 @@ function Cards() {
               />
             </div>
           </Card.Body>
-          <div style={{ padding: "27px", margin: "-140px 0px" }}>
+          <div style={{ padding: '27px', margin: '-140px 0px' }}>
             <Card.Img
               variant="top"
               src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1"
@@ -154,7 +154,7 @@ function Cards() {
               />
             </div>
           </Card.Body>
-          <div style={{ padding: "27px", margin: "-140px 0px" }}>
+          <div style={{ padding: '27px', margin: '-140px 0px' }}>
             <Card.Img
               variant="top"
               src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1"
@@ -183,7 +183,7 @@ function Cards() {
               />
             </div>
           </Card.Body>
-          <div style={{ padding: "27px", margin: "-140px 0px" }}>
+          <div style={{ padding: '27px', margin: '-140px 0px' }}>
             <Card.Img
               variant="top"
               src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1"

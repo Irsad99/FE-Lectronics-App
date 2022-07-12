@@ -1,8 +1,8 @@
-import React from "react";
-import { Button, Card, Form } from "react-bootstrap";
-import style from "./checkout.module.css";
-import Header from "../../components/header/navbar";
-import CardCart from "../../components/cardCart/cardCart";
+import React from 'react';
+import { Button, Card, Form } from 'react-bootstrap';
+import style from './checkout.module.css';
+import Header from '../../components/header/navbar';
+import CardCart from '../../components/cardCart/cardCart';
 
 function Cart() {
   return (
@@ -26,7 +26,7 @@ function Cart() {
               <Button
                 className={style.but_change}
                 variant="outline-primary"
-                style={{ width: "40%", height: "40%" }}
+                style={{ width: '40%', height: '40%' }}
               >
                 Change Address
               </Button>
@@ -53,12 +53,12 @@ function Cart() {
                 <Card.Text className={style.title_bill}> Bill</Card.Text>
                 <Card.Text className={style.cost_bill}> $6000</Card.Text>
               </div>
-              <Button className={style.but_checkout} style={{ width: "97%" }}>
+              <Button className={style.but_checkout} style={{ width: '97%' }}>
                 Pay Bills
               </Button>
               <Form.Select
                 className={style.but_payment}
-                style={{ width: "97%" }}
+                style={{ width: '97%' }}
               >
                 <option value="" selected disabled hidden>
                   Choose Payment Method

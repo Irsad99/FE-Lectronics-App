@@ -1,14 +1,14 @@
-import React from "react";
-import Navbar from "../../components/navbar/navbar_new";
-import Navcard from "../../components/navcard/navcard";
-import style from "./home.module.css";
-import background from "./bg1.jpg";
-import logo from "./Logo.png";
-import coin from "./coin.png";
-import box from "./box.png";
-import img from "./img.png";
-import Cards from "../../components/cardland/cardland";
-import { Card, Container, Button, Form } from "react-bootstrap";
+import React from 'react';
+import Navbar from '../../components/navbar/navbar_new';
+import Navcard from '../../components/navcard/navcard';
+import style from './home.module.css';
+import background from './bg1.jpg';
+import logo from './Logo.png';
+import coin from './coin.png';
+import box from './box.png';
+import img from './img.png';
+import Cards from '../../components/cardland/cardland';
+import { Card, Container, Button, Form } from 'react-bootstrap';
 import Footer from '../../components/footer/footer'
 
 function Home() {
@@ -52,8 +52,8 @@ function Home() {
       <div className="container">
         <div>
           <Card
-            bg={"light"}
-            style={{ width: "8rem", height: "2rem" }}
+            bg={'light'}
+            style={{ width: '8rem', height: '2rem' }}
             className={style.cardChild}
           >
             <Card.Title className={style.title3}>How it Works</Card.Title>
@@ -107,8 +107,8 @@ function Home() {
       <div className="container">
         <div>
           <Card
-            bg={"light"}
-            style={{ width: "8rem", height: "2rem" }}
+            bg={'light'}
+            style={{ width: '8rem', height: '2rem' }}
             className={style.cardChild}
           >
             <Card.Title className={style.title3}>Our Product</Card.Title>

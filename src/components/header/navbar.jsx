@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './navbar.module.css'
-import { Dropdown, Navbar, Container, Button, InputGroup, FormControl } from 'react-bootstrap'
+import { Dropdown, Navbar, Container, Button } from 'react-bootstrap'
 // import '../../index.css'
 
 function Header() {
