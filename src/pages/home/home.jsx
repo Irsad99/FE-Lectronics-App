@@ -10,8 +10,20 @@ import img from './img.png';
 import Cards from '../../components/cardland/cardland';
 import { Card, Container, Button, Form } from 'react-bootstrap';
 import Footer from '../../components/footer/footer'
+import {Link, useNavigate} from 'react-router-dom'
 
 function Home() {
+
+  const navigasi = useNavigate()
+  const navigasi1 = useNavigate()
+
+    const goto = () => {
+        navigasi('/register')
+    }
+    const gotoLogin = () => {
+        navigasi1('/login')
+    }
+
   return (
     <>
       <Navbar />
@@ -28,10 +40,10 @@ function Home() {
               </div>
               <br />
               <div className={style.button}>
-                <button type="button" className="btn btn-primary me-md-2">
+                <button type="button" onClick={gotoLogin} className="btn btn-primary me-md-2">
                   Shop Now
                 </button>
-                <button type="button" className="btn btn-outline-primary">
+                <button type="button" onClick={goto} className="btn btn-outline-primary">
                   Be a Seller
                 </button>
               </div>
@@ -53,7 +65,7 @@ function Home() {
         <div>
           <Card
             bg={'light'}
-            style={{ width: '8rem', height: '2rem' }}
+            style={{ width: '147px', height: '52px' }}
             className={style.cardChild}
           >
             <Card.Title className={style.title3}>How it Works</Card.Title>
@@ -108,7 +120,7 @@ function Home() {
         <div>
           <Card
             bg={'light'}
-            style={{ width: '8rem', height: '2rem' }}
+            style={{ width: '147px', height: '52px' }}
             className={style.cardChild}
           >
             <Card.Title className={style.title3}>Our Product</Card.Title>

@@ -9,7 +9,7 @@ function Header() {
             <div className={style.navbar} />
             <Navbar className="pt-5" style={{ margin: '0 0 4.8%' }}>
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <Button className={style.but_back}>
                             <img src="https://i.ibb.co/HDFThwz/Vector-64.png" alt="" />
                         </Button>

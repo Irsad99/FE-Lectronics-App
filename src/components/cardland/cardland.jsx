@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import style from './cardland.module.css';
 import '../../index.css';
+import cartImage from './vector.png'
 
 function Cards() {
   return (
@@ -34,7 +35,7 @@ function Cards() {
               <Card.Img
                 className={style.img}
                 variant="top"
-                src="https://i.ibb.co/CK2X9RQ/Vector.png"
+                src={cartImage}
               />
             </div>
           </Card.Body>
@@ -63,7 +64,7 @@ function Cards() {
               <Card.Img
                 className={style.img}
                 variant="top"
-                src="https://i.ibb.co/CK2X9RQ/Vector.png"
+                src={cartImage}
               />
             </div>
           </Card.Body>
@@ -92,7 +93,7 @@ function Cards() {
               <Card.Img
                 className={style.img}
                 variant="top"
-                src="https://i.ibb.co/CK2X9RQ/Vector.png"
+                src={cartImage}
               />
             </div>
           </Card.Body>
@@ -121,7 +122,7 @@ function Cards() {
               <Card.Img
                 className={style.img}
                 variant="top"
-                src="https://i.ibb.co/CK2X9RQ/Vector.png"
+                src={cartImage}
               />
             </div>
           </Card.Body>
@@ -150,7 +151,7 @@ function Cards() {
               <Card.Img
                 className={style.img}
                 variant="top"
-                src="https://i.ibb.co/CK2X9RQ/Vector.png"
+                src={cartImage}
               />
             </div>
           </Card.Body>
@@ -179,7 +180,7 @@ function Cards() {
               <Card.Img
                 className={style.img}
                 variant="top"
-                src="https://i.ibb.co/CK2X9RQ/Vector.png"
+                src={cartImage}
               />
             </div>
           </Card.Body>
