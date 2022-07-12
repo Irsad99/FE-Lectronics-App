@@ -8,7 +8,7 @@ function Cards(props) {
     const navigasi = useNavigate()
 
     const goto = () => {
-        navigasi('/detail')
+        navigasi(`detail/${props.id}`)
     }
     return (
         <>
@@ -32,7 +32,7 @@ function Cards(props) {
                 <div style={{ padding: '27px', margin: '-140px 0px' }}>
                     <Card.Img variant="top" height="277px" width="255px" src={props.img} />
                     <Card.Body style={{ display: 'flex' }}>
-                        <Button className={style.but_detail} style={{ width: '100%' }}>
+                        <Button className={style.but_detail} style={{ width: '100%' }} onClick={goto}>
                             Detail
                         </Button>
                         <Button className={style.but_cart}>

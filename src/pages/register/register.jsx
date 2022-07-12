@@ -10,7 +10,7 @@ function Register() {
     const [Users, setUsers] = useState({ email: 'email', password: 'password' })
     const { isAuth } = useSelector((state) => state.users)
 
-    const api = useApi('http://localhost:8080')
+    const api = useApi()
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -44,17 +44,24 @@ function Register() {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-4">
+                    <div className="col-sm-6">
                         <div className={style.form}>
                             <div className={style.text1}>Welcome, Please Create an Account</div>
                             <div className={style.text2}>Please fill in your name, email and password</div>
                             <input onChange={onChangeInput} type="text" name="fullname" className={style.input} placeholder="Fullname" />
                             <input onChange={onChangeInput} type="text" name="email" className={style.input} placeholder="Email" />
                             <input onChange={onChangeInput} type="password" name="password" className={style.input} placeholder="Password" />
-                            <Button onClick={daftar}>Register</Button>
+                            <div className="row" style={{marginTop: '24px'}}>
+                            <div className="col">
+                                <a href="/login" className={style.signin}>Already Have Account?</a>
+                            </div>
+                            <div className="col">
+                            <Button onClick={daftar} className={style.btn_register}>Register</Button>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                    <div className="col-sm-8">
+                    <div className="col-sm-6">
                         <img width="1018px" height="802px" className={style.background} src={background} alt="background" />
                     </div>
                 </div>

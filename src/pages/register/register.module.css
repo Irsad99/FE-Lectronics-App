@@ -38,3 +38,48 @@
     position: absolute;
     background-color: #415fe7;
 }
+
+.input {
+    margin: auto;   
+    margin-top: 16px;
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 64px;
+
+    /* Section */
+    border: 1px solid #777777;
+    border-radius: 15px;
+}
+
+.btn_register {
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 69px;
+    gap: 10px;
+
+    background: #0300AD;
+
+    /* shadow/landing page */
+    box-shadow: 5px 4px 50px rgba(3, 0, 173, 0.2);
+    border-radius: 15px;
+    margin-left: -18px;
+}
+
+.signin {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+
+    /* identical to box height, or 29px */
+    letter-spacing: 0.03em;
+
+    /* Section */
+    color: #777777;
+}
