@@ -44,7 +44,7 @@ function CardHistory() {
                 <Pagination.Item>{7}</Pagination.Item>
                 <Pagination.Item>{8}</Pagination.Item>
                 <Pagination.Next />
-            </Pagination>
+            </Pagination> 
         </>
     )
 }

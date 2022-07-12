@@ -1,4 +1,6 @@
 import React from 'react'
+import withAuth from '../../helpers/withAuth'
+
 import style from './myprofile.module.css'
 import { Row, Col, Form, Container, Button } from 'react-bootstrap'
 
@@ -106,4 +108,4 @@ function MyProfile() {
     )
 }
 
-export default MyProfile
+export default withAuth(MyProfile)

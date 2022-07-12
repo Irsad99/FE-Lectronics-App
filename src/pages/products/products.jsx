@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 // import { Container } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import withAuth from '../../helpers/withAuth'
 
 import style from './products.module.css'
 import Header from '../../components/headerAuth/navbar'
@@ -15,8 +16,6 @@ import Menus from '../../components/menuCategory/menuCategory'
 
 function Products() {
     const [products, setProducts] = useState([])
-    const { isAuth } = useSelector((state) => state.users)
-    const navigate = useNavigate()
 
     const api = useApi()
 
@@ -34,12 +33,6 @@ function Products() {
                 console.log(err)
             })
     }
-
-    useEffect(() => {
-        if (!isAuth) {
-            navigate('/')
-        }
-    }, [isAuth])
 
     useEffect(() => {
         getProducts()
@@ -63,4 +56,4 @@ function Products() {
     )
 }
 
-export default Products
+export default withAuth(Products)
