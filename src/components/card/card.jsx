@@ -10,8 +10,6 @@ function Cards(props) {
     const goto = () => {
         navigasi('/detail')
     }
-
-function Cards(props) {
     return (
         <>
             <Card className={style.card}>
@@ -45,7 +43,6 @@ function Cards(props) {
             </Card>
         </>
     )
-}
 }
 
 export default Cards
