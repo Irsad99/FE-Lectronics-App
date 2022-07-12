@@ -1,0 +1,74 @@
+.change {
+    margin: -50px 10px 120px 50px;
+    box-shadow: 0px 0px 60px rgba(51, 50, 50, 0.1);
+    height: 550px;
+    width: 1200px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cardCart {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.img {
+    height: 150px;
+    width: 150px;
+    margin: 50px 40px 20px 525px;
+}
+
+.text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #333333;
+}
+
+.text2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    
+
+    color: #333333;
+}
+
+.text3 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 140%;
+    margin-left: 60px;
+    margin-top: -90px;
+    letter-spacing: 0.03em;
+
+    color: #333333;
+}
+
+.but_checkout {
+    background: #0300ad;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 18px;
+    margin-left: 493.5px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.position {
+    margin-top: 50px;
+}

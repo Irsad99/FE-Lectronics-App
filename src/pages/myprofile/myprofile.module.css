@@ -1,0 +1,89 @@
+.content {
+    background: #e1e1e1;
+    text-align: center;
+    border-radius: 10px;
+    height: 777px;
+}
+
+.but_back {
+    position: absolute;
+    background: rgba(3, 0, 173, 0.1);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    border: 0;
+    margin: 20px;
+    padding: 15px 20px;
+}
+
+.but_back:hover,
+.but_back:focus {
+    background: rgba(3, 0, 173, 0.1);
+}
+
+.avatar {
+    padding-top: 175px;
+    color: #777777;
+}
+
+.btn {
+    text-align: right;
+    margin: -85px 75px;
+}
+
+.upload,
+.upload:hover,
+.upload:focus {
+    padding: 40px;
+    border-radius: 50%;
+    background: rgba(3, 0, 173, 0.1);
+    border: 0;
+    color: #0300ad;
+}
+
+.ctn {
+    margin: 55px;
+    width: 70%;
+}
+
+.bio,
+.bio:hover {
+    text-decoration: none;
+    font: 1000 60px Nunito;
+    color: #333333;
+}
+
+.form_profile {
+    margin-top: 50px;
+}
+
+.input {
+    padding: 30px 75px;
+    box-shadow: 0px 0px 60px rgb(45 45 45 / 10%);
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+}
+
+.icon {
+    position: absolute;
+    margin: 30px;
+}
+
+.btn_submit,
+.btn_submit:hover {
+    box-shadow: 0px 0px 60px rgba(3, 0, 173, 0.2);
+    border-radius: 20px;
+    background: #0020b2;
+    font: Bold 20px Nunito;
+    padding: 20px 8%;
+    margin-top: 5%;
+}
+
+.col {
+    margin-top: 3%;
+}
+
+.label {
+    font: 700 22px 'Nunito';
+}

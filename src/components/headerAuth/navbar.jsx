@@ -1,13 +1,20 @@
 import React from 'react'
 import style from './navbar.module.css'
 import { Dropdown, Navbar, Container, Button } from 'react-bootstrap'
-// import '../../index.css'
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+    const navigate = useNavigate()
+
+    const logout = () => {
+        localStorage.clear()
+        navigate('/login')
+    }
+
     return (
         <>
             <div className={style.navbar} />
-            <Navbar className="pt-5" style={{ margin: '0 0 4.8%' }}>
+            <Navbar className="pt-5" style={{ margin: '0 0 5.8%' }}>
                 <Container>
                     <Navbar.Brand href="#home">
                         <Button className={style.but_back}>
@@ -28,25 +35,12 @@ function Header() {
                                 <Dropdown.Item href="#/action-1">Cart</Dropdown.Item>
                                 <Dropdown.Item href="#/action-2">History</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3">Profile</Dropdown.Item>
-                                <Dropdown.Item href="#/action-4">Logout</Dropdown.Item>
+                                <Dropdown.Item onClick={logout}>Logout</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-            {/* <Navbar.Brand href="#home">
-                <img width="auto" height="50px" className={style.logo} src={Logo}  alt="logo" />
-            </Navbar.Brand>
-            <Nav className={style.nav}>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Products</Nav.Link>
-            <Nav.Link href="#pricing">Community</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <Button className={style.button} variant="primary">Sign Up</Button>
-            </Nav>
-            </Container> */}
-            {/* </Navbar> */}
         </>
     )
 }
