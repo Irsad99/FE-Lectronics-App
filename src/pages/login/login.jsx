@@ -43,23 +43,29 @@ function Login() {
             })
             .catch((err) => {
                 console.log(err)
-            })
-    }
+            })   }
 
     return (
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-4">
+                    <div className="col-sm-6">
                         <div className={style.form}>
                             <div className={style.text1}>Welcome Back</div>
                             <div className={style.text2}>Steps to get started, find the best stuff.</div>
                             <input onChange={onChangeInput} type="text" name="email" className={style.input} placeholder="Enter your email" />
                             <input onChange={onChangeInput} type="password" name="password" className={style.input} placeholder="Password" />
                         </div>
-                        <Button onClick={goLogin}>Login</Button>
+                        <div className="row" style={{marginTop: '24px'}}>
+                            <div className="col">
+                                <a href="#" className={style.forgot}>Forgot Password?</a>
+                            </div>
+                            <div className="col">
+                            <Button onClick={goLogin} className={style.btn_login}>Login</Button>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-sm-8">
+                    <div className="col-sm-6">
                         <img width="899px" height="921px" className={style.background} src={background} alt="background" />
                     </div>
                 </div>

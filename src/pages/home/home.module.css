@@ -103,8 +103,21 @@
 }
 
 .title3 {
-    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    width: auto;
+    height: 29px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+
+    /* identical to box height, or 29px */
     text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #0300AD;
 }
 
 .parent {

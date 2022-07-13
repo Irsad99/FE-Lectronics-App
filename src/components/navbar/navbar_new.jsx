@@ -8,7 +8,7 @@ function Navbar_New() {
         <>
         <Navbar className={style.navbar} variant="light">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img width="auto" height="50px" className={style.logo} src={Logo}  alt="logo" />
                 </Navbar.Brand>
                 <Nav className={style.nav}>
