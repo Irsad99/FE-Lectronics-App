@@ -9,11 +9,26 @@ import CardCart from '../../components/cardCart/cardCart'
 import Footer from '../../components/footer/footer'
 
 function Cart() {
+    const [order, setOrder] = useState({ product_id: '0', total_price: '0', status: 'pending', payment_url: 'http://google.com', address: 'addresss' })
     const [data, setData] = useState({})
     const params = useParams()
     const navigate = useNavigate()
 
     const api = useApi()
+
+    const newOrder = async () => {
+        api.requests({
+            method: 'POST',
+            url: '/order/new',
+            data: order,
+        })
+            .then((res) => {
+                console.log(res)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }
 
     const getProduct = async () => {
         api.requests({
@@ -22,7 +37,7 @@ function Cart() {
         })
             .then((res) => {
                 const { data } = res.data
-                console.log(data)
+                setOrder(data)
                 setData(data)
             })
             .catch((err) => {
@@ -46,7 +61,7 @@ function Cart() {
                         <Card className={style.change}>
                             <Card.Title className={style.title_deliv}>Delivery address</Card.Title>
                             <div className={style.change_add}>
-                                <Form.Control className={style.form} as="textarea" placeholder="Enter Your Address" />
+                                <Form.Control className={style.form} name="address" as="textarea" placeholder="Enter Your Address" />
                                 <Button className={style.but_change} variant="outline-primary" style={{ width: '40%', height: '40%' }}>
                                     Change Address
                                 </Button>
@@ -73,7 +88,7 @@ function Cart() {
                                     <Card.Text className={style.title_bill}> Bill</Card.Text>
                                     <Card.Text className={style.cost_bill}>Rp {data.price}</Card.Text>
                                 </div>
-                                <Button className={style.but_checkout} style={{ width: '97%' }}>
+                                <Button onClick={newOrder} className={style.but_checkout} style={{ width: '97%' }}>
                                     Pay Bills
                                 </Button>
                                 <Form.Select className={style.but_payment} style={{ width: '97%' }}>

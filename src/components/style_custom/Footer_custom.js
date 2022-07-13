@@ -6,7 +6,7 @@ export const Foot = styled.div`
 `
 
 export const Content = styled.div`
-    margin: 20px auto 0px;
+    margin: 5% auto 0px;
     display: flex;
     flex-wrap: wrap;
     padding: 100px;
