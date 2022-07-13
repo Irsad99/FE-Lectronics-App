@@ -12,11 +12,11 @@ function Navbar_New() {
                     <img width="auto" height="50px" className={style.logo} src={Logo}  alt="logo" />
                 </Navbar.Brand>
                 <Nav className={style.nav}>
-                    <Nav.Link href="#home" className={style.navbar2}>Home</Nav.Link>
-                    <Nav.Link href="#products" className={style.navbar2}>Products</Nav.Link>
+                    <Nav.Link href="/" className={style.navbar2}>Home</Nav.Link>
+                    <Nav.Link href="/products" className={style.navbar2}>Products</Nav.Link>
                     <Nav.Link href="#community" className={style.navbar2}>Community</Nav.Link>
                     <Nav.Link href="#About" className={style.navbar2}>About</Nav.Link>
-                    <Button href="login" className={style.button} variant="primary">Sign Up</Button>
+                    <Button href="/login" className={style.button} variant="primary">Sign Up</Button>
                 </Nav>
             </Container>
         </Navbar>
