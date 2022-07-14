@@ -20,8 +20,8 @@ function router() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/products" element={<Products />} />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/cart/:id" element={<Cart />} />
+                <Route path="/checkout/:id" element={<Checkout />} />
                 <Route path="/notif" element={<Notife />} />
                 <Route path="/me" element={<MyProfile />} />
                 <Route path="/history" element={<History />} />
