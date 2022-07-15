@@ -24,7 +24,7 @@ function router() {
                 <Route path="/notif" element={<Notife />} />
                 <Route path="/me" element={<MyProfile />} />
                 <Route path="/history" element={<History />} />
-                <Route path="detail" element={<Detail />} />
+                <Route path="products/detail/:id" element={<Detail />} />
             </Routes>
         </BrowserRouter>
     )

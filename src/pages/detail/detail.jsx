@@ -1,9 +1,42 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+
+// Styling
 import style from './detail.module.css'
 import pen from './Vector.png'
+
+// Component
 import Header from '../../components/header/navbar'
 
+// Dependencies
+import useApi from '../../helpers/useApi'
+import { useParams } from 'react-router-dom'
+
+
 function Detail() {
+    const [data, setData] = useState({})
+    const params = useParams()
+
+    const api = useApi()
+
+    const getData = async () => {
+        api.requests({
+            method: 'GET',
+            url: `/product/item?id=${params.id}`,
+        })
+            .then((res) => {
+                const { data } = res.data
+                setData(data)
+                console.log(data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
+
     const [num, setNum] = useState(1)
 
     function incrementCount() {
@@ -11,7 +44,7 @@ function Detail() {
     }
 
     function decrementCount() {
-        if (num == 0) {
+        if (num === 0) {
             setNum(0)
         } else {
             setNum(num - 1)
@@ -25,12 +58,13 @@ function Detail() {
             <div className="row">
             <div className="col-6 col-md-auto">
             <div className={style.img}>
-                <img src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1" className="card-img-top" alt="..." />
+                <img src={data.image} className="card-img-top" alt="..." />
+                {console.log(data)}
                 <div className="card-body">
-                <img src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1" className={style.imgthumb} alt="..." />
-                <img src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1" className={style.imgthumb} alt="..." />
-                <img src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1" className={style.imgthumb} alt="..." />
-                <img src="https://resource.logitechg.com/w_659,c_limit,f_auto,q_auto,f_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-headset/proheadset-hero.png?v=1" className={style.imgthumb} alt="..." />
+                <img src={data.image} className={style.imgthumb} alt="..." />
+                <img src={data.image} className={style.imgthumb} alt="..." />
+                <img src={data.image} className={style.imgthumb} alt="..." />
+                <img src={data.image} className={style.imgthumb} alt="..." />
                 </div>
             </div>
             <div className={style.detail}>
@@ -53,7 +87,7 @@ function Detail() {
                     <p className={style.stock}>Stock</p>
                 </div>
                 <div className="col-md-auto">
-                    <p className={style.num_stock}>5</p>
+                    <p className={style.num_stock}>{data.stock}</p>
                 </div>
                 </div>
 
@@ -69,7 +103,7 @@ function Detail() {
                     <div className="col">
                     <p className="card-subtitle mb-2 text-muted"><small>Sub-total</small></p>
                     </div>
-                    <div className="col"><h5 className='text-end'>$3000</h5></div>
+                    <div className="col"><h5 className='text-end'>$ {data.price}</h5></div>
                     </div>
                 </div>
                 <div style={{ display: 'flex' }}>
@@ -83,12 +117,12 @@ function Detail() {
             <div className="mb-3">
                 <div className="card-body">
                     <div className={style.title}>
-                    <h1 className="card-title">Sennheiser HD-25</h1>
+                    <h1 className="card-title">{data.name}</h1>
                     </div>
                 <div className={style.detail1}>
                     
                     <a className={style.card_price}>Sold</a>
-                    <a className={style.stock}>6</a>
+                    <a className={style.stock}>{data.sold}</a>
                     <img src="https://i.ibb.co/2YCQs1S/Vector.png" alt="" style={{ padding: '0 0 4px', marginLeft: '10px' }} />
                     <a className={style.card_rate}>4.9</a>
                 </div>
@@ -105,12 +139,11 @@ function Detail() {
             </div>
             <hr />
 
-            <p>Open repair of infrarenal aortic aneurysm or dissection, plus repair of associated arterial trauma, following unsuccessful endovascular repair; tube prosthesis  </p>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor </p>
+            <p>{data.description}</p>
             
             <form>
                 <div className="mb-3">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Sennheiser HD-25</label>
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label">{data.name}</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows={3} defaultValue={""} />
                 </div>
                 <button type="button" className="btn btn-primary">Submit</button>
