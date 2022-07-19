@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import useApi from '../../helpers/useApi'
+import withAuth from '../../helpers/withAuth'
 
 import { Button, Card, Form, Container } from 'react-bootstrap'
 import style from './checkout.module.css'
@@ -111,8 +112,4 @@ function Cart() {
     )
 }
 
-<<<<<<< HEAD
 export default withAuth(Cart);
-=======
-export default Cart
->>>>>>> login_register_fix

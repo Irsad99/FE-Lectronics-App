@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { InputGroup, FormControl, Button, Card } from 'react-bootstrap'
 import { useParams, useNavigate } from 'react-router-dom'
 import useApi from '../../helpers/useApi'
+import withAuth from '../../helpers/withAuth'
 
 import style from './cart.module.css'
 import logo from './logo.png'
