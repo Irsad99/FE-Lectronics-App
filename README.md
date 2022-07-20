@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center">
+ Lectronic App
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img src="https://res.cloudinary.com/dlyp1s66j/image/upload/v1658298984/Logo_zjryrz.png" width="200px" alt="Lectronic" />
+</p>
 
-## Available Scripts
+<p align="center">
+    <a href="/#" target="blank">View Demo</a>
+  · <a href="https://github.com/Irsad99/FE-Lectronics-App/issues">Report Bug</a>
+  · <a href="https://github.com/Irsad99/FE-Lectronics-App/pulls">Request Feature</a>
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+## Built with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![React.js](https://img.shields.io/badge/Reactjs-100000?style=for-the-badge&logo=React&logoColor=white&labelColor=4B8286&color=7CD4D7)](https://reactjs.org/)
+[![Redux](https://img.shields.io/badge/redux-100000?style=for-the-badge&logo=redux&logoColor=white&labelColor=6456D0&color=513EBA)](https://redux-toolkit.js.org/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description about project
+Lectronic App is an application for selling electronic devices. users can order products and make payments through the third application, namely Midtrans. and users can manage profiles. For the admin role, you can manage product and user. This application frontend is built with ReactJS using the redux package for state management
 
-### `npm test`
+## Installation Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
 
-### `npm run build`
+   ```bash
+    https://github.com/Irsad99/FE-Lectronics-App
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Edit .env file at root folder project
 
-### `npm run eject`
+   ```sh
+   REACT_APP_BASE_URL = [Backend API]
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Run the app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. You are all set!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   View the website at: http://localhost:3000
+   ```
 
-## Learn More
+## Backend Repository
+Backend API : Lectronic - Backend [here](https://github.com/Irsad99/Lectronic-Apps)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Contributors
+<a href = "https://github.com/Irsad99/FE-Lectronics-App/graphs/contributors">
+  <img src="https://avatars.githubusercontent.com/u/80185253?s=60&amp;v=4" class="avatar avatar-user" alt="calvinrahmat" width="38" height="38">
+  <img src="https://avatars.githubusercontent.com/u/76877980?s=60&amp;v=4" class="avatar avatar-user" alt="Gustiana882" width="38" height="38">
+  <img src="https://avatars.githubusercontent.com/u/38394430?s=60&amp;v=4" class="avatar avatar-user" alt="firyal-salsa" width="38" height="38">
+</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<hr>
+<p align="center">
+Developed with ❤️ in Indonesia 	🇮🇩
+</p>

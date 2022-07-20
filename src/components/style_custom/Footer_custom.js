@@ -6,8 +6,7 @@ export const Foot = styled.div`
 `
 
 export const Content = styled.div`
-<<<<<<< HEAD
-  margin: 20px auto 0px;
+  margin: 5% auto 0px;
   display: flex;
   flex-wrap: wrap;
   padding: 100px;
@@ -31,13 +30,6 @@ export const Content = styled.div`
     color: black;
     padding-left: 90px;
     width: 220px;
-=======
-    margin: 5% auto 0px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px;
-    font-family: 'Nunito';
->>>>>>> login_register_fix
     font-size: 18px;
     color: #848484;
     justify-content: center;
